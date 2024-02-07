@@ -8,20 +8,3 @@ article{
     text-align: center;
     margin-top: 5em;
 }
-
-
-
-/* #celebration{
-    display: none;
-    animation-name: rotate;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-fill-mode: both, both;
-}
-
-@keyframes rotate{
-    to{
-        rotate: 2turn;
-    }
-} */

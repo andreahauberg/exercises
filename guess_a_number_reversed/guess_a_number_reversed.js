@@ -52,3 +52,25 @@ function enableButtons() {
     document.getElementById('high').disabled = false;
     document.getElementById('correct').disabled = false;
 }
+
+// let loNum = 0;
+// let hiNum = 100;
+// let computerGuess;
+// let computerGuessText = document.querySelector("#computer_guess");
+// document.querySelector("#low").addEventListener("click", tooLow );
+// document.querySelector("#high").addEventListener("click", tooHigh );
+// computerGuess()
+
+// function computerGuess(){
+
+//     const guess = Math.round(loNum +( hiNum - loNum ) / 2);
+//     computerGuessText.textContent = guess;
+// }
+// function tooLow(){
+//     loNum = computerGuess;
+//     computerGuess();
+// }
+// function tooHigh(){
+//     hiNum = computerGuess;
+//     computerGuess();
+// }

@@ -103,3 +103,108 @@
 // }
 // fireOrHire (hire, person3);
 // console.log(person3);
+
+
+// For each
+
+// const people = ["Harry", "Ron", "Hermione", "Neville"];
+
+// function sayHello(person){
+//     console.log(`Hello ${person}`);
+// }
+
+// people.forEach(sayHello);
+
+
+// foreach callback med flere parametre
+
+// const people = ["Harry", "Ron", "Hermione", "Neville"];
+
+// function testParms ( a, b, c, d ) {
+//     console.log(`a: ${a}, b: ${b}, c: ${c}, d: ${d}`);
+// }
+
+// people.forEach( testParms );
+
+// ****FILTER*****
+
+// const animals = [
+
+// {
+//     name: "Mandu",
+//     type: "cat"
+// },
+
+// {
+//     name: "Mia",
+//     type: "cat"
+// },
+
+// {
+//     name: "Lee",
+//     type: "dog"
+// },
+
+// {
+//     name: "DeeDee",
+//     type: "dog"
+// }
+
+// ];
+
+// function isCat( animal ){
+//     if( animal.type === "cat" ){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// let onlyCats = animals.filter(isCat);
+// console.log(onlyCats);
+
+
+
+// function isDog( animal ){
+//     if( animal.type === "dog" ){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// let onlyDogs = animals.filter(isDog);
+// console.log(onlyDogs);
+
+
+
+// function all( animal ){
+//     return true;
+// }
+
+// function none( animal ){
+//     return false;
+// }
+
+// console.log(animals.filter( all ));
+// console.log(animals.filter( none ));
+
+
+//*** += *** lægger en bestemt værdi til 
+
+// let str = "hej ";
+// str += "du";
+// console.log(str);
+
+// let num =2;
+//  num += 4;
+//  console.log(num);
+
+
+// *** ++ *** (lægger en til)
+
+//  let i = 0;
+//  console.log(i);
+
+//  i++;
+//  console.log(i);
