@@ -1,5 +1,5 @@
 "use strict";
-// Greeting 1
+// ***********Greeting 1****************
 // const result = greeting("Klaus");
 
 // function greeting (firstName){
@@ -8,7 +8,7 @@
 // }
 // console.log(result);
 
-// Greeting 2
+// **************Greeting 2***************
 
 // function greeting(firstName){
 //     return `Hello ${firstName}`;
@@ -19,7 +19,7 @@
 // const txt = `Greeting is ${greeting("a name")}`;
 // console.log(txt)
 
-// Array 
+// **************Array******************
 
 // let letters = ['a','b','c','d','e','f','g','h'];
 // console.log(letters[4]);
@@ -28,7 +28,7 @@
 // newarr[4] = '*';
 // console.log(letters[4]);
 
-// Array Methods
+// ***********Array Methods*****************
 
 // const people = ["Harry", "Ron", "Hermione"];
 // let result;
@@ -60,7 +60,7 @@
 // console.log("from", Array.from(str));
 // console.log("spread", [...str]);
 
-// Functions
+// ***********Functions****************
 
 // function greeting(firstName){
 //     return `Hello ${firstName}`;
@@ -68,14 +68,14 @@
 // const sayHi = greeting;
 // console.log(sayHi ("Mona"));
 
-// Callback function
+// **************Callback function************
 
 // function congreet(firstName){
 //     console.log(`Hello ${firstName}`);
 // }
 // setTimeout(congreet, 1000, "Ron");
 
-// Calling functions (send en funktion med som referrence)
+// *************Calling functions (send en funktion med som referrence)****************
 
 // const person3 ={
 //     firstName: "Harry",
@@ -105,7 +105,7 @@
 // console.log(person3);
 
 
-// For each
+// *********For each********
 
 // const people = ["Harry", "Ron", "Hermione", "Neville"];
 
@@ -126,7 +126,7 @@
 
 // people.forEach( testParms );
 
-// ****FILTER*****
+// ********FILTER*********
 
 // const animals = [
 
@@ -190,7 +190,7 @@
 // console.log(animals.filter( none ));
 
 
-//*** += *** lægger en bestemt værdi til 
+//****** += ****** lægger en bestemt værdi til 
 
 // let str = "hej ";
 // str += "du";
@@ -201,10 +201,123 @@
 //  console.log(num);
 
 
-// *** ++ *** (lægger en til)
+// ****** ++ ****** (lægger en til)
 
 //  let i = 0;
 //  console.log(i);
 
 //  i++;
 //  console.log(i);
+
+
+// **********Objects********
+
+// ****dot notation******
+// const object = {
+//     firstName: "Erik",
+//     age: 30,
+//     student: true,
+// };
+
+// console.log(`${object.firstName } is ${object.age}`);
+
+// *****Bracet notation******
+
+// const object = {
+//     firstName: "Erik",
+//     age: 30,
+//     student: true,
+// };
+
+// const nameToGet = "firstName";
+
+// console.log(`${object[nameToGet] } is ${object["age"]}`);
+
+// ***** Adding proterties ********
+
+// let person1 = {
+//     firstName: "Erik",
+//     age: 30,
+//     student: true,
+// };
+
+// console.log(person1.lastName);
+
+// person1.lastName = "Poulsen";
+
+// console.log(person1.lastName);
+
+// console.log("person1", person1)
+
+// person1.lastName = undefined;
+
+// console.log("person1.lastName:", person1.lastName);
+
+// console.log("person1.middleName:", person1.middleName);
+
+// delete person1.lastName;
+// console.log("person1", person1);
+
+// *******objects as variables***********
+
+// const person1 = {
+//     firstName: "Erik",
+//     age: 30,
+//     student: true,
+// };
+
+// console.log(person1);
+
+// person1.age++;
+
+// console.log(person1);
+
+// const person1 = {
+//     firstName: "Erik",
+//     age: 30,
+//     student: true,
+// };
+
+// const person2 = {
+//     firstName: "Bo",
+//     age: 69,
+//     student: false,
+// };
+
+// person1 = person2;
+
+
+// const person1 = {
+//     firstName: "Erik",
+//     age: 30,
+//     student: true,
+// };
+
+// const person2 = person1;
+
+// person2.firstName = "Bo";
+
+// console.log(person1.firstName);
+
+
+// ********Comparing objects*************
+
+const student1 = {
+    firstName: "Harry",
+    lastName: "Potter"
+};
+
+const student2 = {
+    firstName: "Harry",
+    lastName: "Potter"
+};
+
+
+if (student1 === student2) {
+    console.log("They are the same!");
+} else {
+    console.log("They are not the same");
+}
+
+student1.firstName = student2.firstName;
+student1.lastName = student2.lastName;

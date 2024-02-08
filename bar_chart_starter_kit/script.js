@@ -9,7 +9,7 @@ function generateColumn() {
   valueArr.push(newValue);
 
   if (valueArr.length > maxColumns) {
-    valueArr.shift(); 
+    valueArr.shift();   
   }
 
   updateChart();
