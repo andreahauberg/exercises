@@ -1,0 +1,10 @@
+p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+ .highlight {
+    background-color: yellow;
+    padding: 2px;
+    border-radius: 4px;
+  }
