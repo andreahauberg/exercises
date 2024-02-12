@@ -68,3 +68,5 @@ document.getElementById("closeDialog").addEventListener("click", () => {
     infoDialog.close();
 });
 
+
+// theText = theText.replaceAll(word.bad, word.good)

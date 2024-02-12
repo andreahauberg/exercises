@@ -1,0 +1,47 @@
+:root{
+    --bg_clr_hawaii:hotpink;
+    --bg_clr_light:beige;
+    --bg_clr_dark:black;
+    --text_clr_hawaii:greenyellow;
+    --text_clr_light:black;
+    --text_clr_dark:beige;
+}
+
+*{
+    font-family: fantasy;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom:black solid 1px;
+
+}
+
+div{
+    text-align: end;
+}
+
+main{
+    line-height: 50vh;
+}
+
+footer{
+    border-top: black solid 1px;
+}
+
+body[data-theme="hawaii"]{
+    background-color: var(--bg_clr_hawaii);
+    color: var(--text_clr_hawaii);
+
+}
+body[data-theme="dark"]{
+    background-color: var(--bg_clr_dark);
+    color: var(--text_clr_dark);
+
+}
+body[data-theme="light"]{
+    background-color: var(--bg_clr_light);
+    color: var(--text_clr_light);
+
+}

@@ -360,3 +360,31 @@
 
 // const firstName = fullName.substring(2,5)
 // console.log(firstName + "_");
+
+// ***************nameparts**************
+
+// const aName = "Peter Heronimous Lind";
+// const firstName = aName.substring(0, aName.indexOf(" "));
+// console.log("firstName", "_" + firstName + "_");
+
+// const middleName = aName.substring(aName.indexOf(" ") + 1, aName.lastIndexOf(" "));
+// console.log("middleName", "_" + middleName + "_");
+
+// const lastName = aName.substring(aName.lastIndexOf(" "));
+// console.log("lastName", "_" + lastName + "_");
+
+// console.log(aName.split(" "));
+// const firstNameSplit = aName.split(" ")[0];
+// console.log(firstNameSplit);
+
+// *************3caPitalization*****************
+
+// const aName = "PeteR";
+// const cap3str = aName.slice(0,2).toLowerCase() + aName[2].toUpperCase() + aName.slice(3).toLowerCase();
+// console.log(cap3str);
+
+// ************Capitalization********************
+
+// const capiTal = aName.slice(0,2).toLowerCase() + aName[2].toUpperCase() + aName.slice(3).toLowerCase();
+
+
