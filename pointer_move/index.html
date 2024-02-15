@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse X-Position Color Update</title>
+  <style>
+    :root {
+      --hue: 200;
+      --saturation: 50%;
+      --lightness: 50%;
+    }
+
+    body {
+      background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+    }
+  </style>
+</head>
+<body>
+
+<script>
+document.addEventListener('mousemove', (event) => {
+  // Lytter efter 'mousemove'-begivenheden på dokumentet (siden) og udfører en funktion, når det sker.
+
+  // Beregner procentdelen af musens X-position i forhold til vinduets højde
+  const mouseXPercentage = (event.clientX / window.innerWidth) * 100;
+  // `event.clientX` repræsenterer den aktuelle vandrette position af musen i forhold til visningen af dokumentet.
+  // `window.innerWidth` repræsenterer bredden af vinduet, så divisionen giver en procentdel af musens position.
+
+  // Opdaterer CSS variablen '--lightness' med den beregnede værdi
+  document.documentElement.style.setProperty('--lightness', `${mouseXPercentage}%`);
+  // `document.documentElement` repræsenterer roddokumentet (hele HTML-dokumentet).
+  // `style.setProperty` bruges til at ændre værdien af en CSS-variabel, her '--lightness', baseret på den beregnede procentdel.
+});
+
+</script>
+
+</body>
+</html>
