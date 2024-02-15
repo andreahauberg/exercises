@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Knap</title>
+  <style>
+    #netflixButton {
+      width: 200px;
+      height: 50px;
+      color: white;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      background: #a19eab;
+      border-radius: 5px;
+    }
+
+    #colorFill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      background: #e8e7e7;
+      opacity: 50%;
+      animation: colorFillAnimation 5s linear forwards;
+    }
+
+
+    #netflixButton:hover #colorFill {
+      animation: colorFillAnimationHover 0s linear forwards;
+    }
+
+
+    @keyframes colorFillAnimation {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
+    @keyframes colorFillAnimationHover {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<button id="netflixButton">
+  <div id="colorFill"></div>
+  ▶ Næste Episode
+</button>
+
+</body>
+</html>
