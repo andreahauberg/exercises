@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <style>
+            body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Styling for the growing animation */
+        #data-container {
+            display: inline-block; 
+            font-size: 24px; 
+            transition: 1s ; 
+        }
+
+        .growing {
+            scale: 10;
+        }
+    </style>
+</head>
+<body>
+    <div id="data-container">
+    </div>
+
+    <script>
+        // Function to fetch data from the provided URL
+        async function fetchData() {
+            const response = await fetch('https://kea-alt-del.dk/kata-distortion/');
+            const data = await response.json();
+            return data.inQueue;
+        }
+
+        // Function to update the visualization
+        async function updateVisualization() {
+            const dataContainer = document.querySelector('#data-container');
+            const currentValue = parseInt(dataContainer.innerText) || 0;
+
+            // Fetch the new value
+            const newValue = await fetchData();
+
+            // Update the DOM with the new value
+            dataContainer.innerText = newValue;
+
+            // Add and remove the growing class to trigger the animation
+            dataContainer.classList.add('growing');
+            setTimeout(() => {
+                dataContainer.classList.remove('growing');
+            }, 500);
+        }
+
+        // Initial update
+        updateVisualization();
+
+        // Set up interval to update every 10 seconds
+        setInterval(updateVisualization, 10000);
+    </script>
+</body>
+</html>
